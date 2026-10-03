@@ -1,0 +1,22 @@
+{
+  "name": "Sovereign Secret Scanner",
+  "url": "https://github.com/your-org/sovereign-secret-scanner",
+  "hook_attributes": {
+    "url": "https://your-domain.com/webhook",
+    "active": true
+  },
+  "redirect_url": "https://your-domain.com/callback",
+  "callback_urls": ["https://your-domain.com/callback"],
+  "setup_url": "https://your-domain.com/setup",
+  "description": "Automated secret scanning with business impact valuation. Finds secrets, values them, reports to owners.",
+  "public": true,
+  "default_events": ["push", "pull_request"],
+  "default_permissions": {
+    "contents": "read",
+    "pull_requests": "read",
+    "issues": "write",
+    "checks": "write",
+    "metadata": "read"
+  },
+  "events": ["push", "pull_request", "repository", "installation"]
+}
